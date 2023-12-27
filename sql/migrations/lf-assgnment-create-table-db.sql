@@ -14,7 +14,7 @@ CREATE TABLE employees (
     first_name VARCHAR(255) NOT NULL,
     birth_date TIMESTAMP,
     photo varChar NOT NULL,
-    notes VARCHAR(255) NOT NULL
+    notes VARCHAR(500) NOT NULL
 );
 
 CREATE TABLE shippers (
@@ -70,5 +70,3 @@ CREATE TABLE order_details (
     FOREIGN KEY (order_id) REFERENCES orders(order_id),
     FOREIGN KEY (product_id) REFERENCES products(product_id)
 );
-
-
